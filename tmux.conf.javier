@@ -1,0 +1,114 @@
+# NOTE: checkear la version de tmux porque con cada version nueva te caga
+# todo tu config, actualmente todo este config funciona bien en version 2.9
+
+
+#powerline for solus
+#source /usr/lib64/python2.7/site-packages/powerline/bindings/tmux/powerline.conf
+#source /usr/lib/python2.7/site-packages/powerline/bindings/tmux/powerline_tmux_2.1_plus.conf 
+
+# # powerline for fedora (package tmux-powerline)
+source "/usr/share/tmux/powerline.conf"
+
+# split window extra keybind
+bind-key / split-window -h
+
+# mouse mode tmux below 2.1
+# set -g mouse-select-window on
+# set -g mouse-select-pane on
+# set -g mouse-resize-pane on
+
+# enable mouse mode from tmux 2.1+
+set -g mouse on
+
+# versiones viejas
+# set -g mode-mouse on
+
+# improve colors
+set -g default-terminal 'screen-256color'
+
+
+##      C Ctrl
+##      M Alt   (Meta)
+##      S Shift
+
+# Move through windows with Alt+{Right,Left}
+bind -n M-Right next-window
+bind -n M-Left previous-window
+
+# Move the windows with Alt+{Up,Down}
+bind -n M-Up swap-window -t -1
+bind -n M-Down swap-window -t +1
+
+# Move throuth panels with Alt+Shift+Arrows
+bind -n M-S-Left select-pane -L
+bind -n M-S-Right select-pane -R
+bind -n M-S-Up select-pane -U
+bind -n M-S-Down select-pane -D
+
+# Move word by word with Ctrl+Arrows
+#unbind C-Left
+#unbind C-Right
+set-window-option -g xterm-keys on
+
+# Bind second prefix
+set -g prefix2 C-b
+
+##	Rodrigo Matto
+##
+##
+
+# act like vim
+setw -g mode-keys vi
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+bind-key -r C-h select-window -t :-
+bind-key -r C-l select-window -t :+
+
+# fuck emacs mode, set-default command mode a C-u
+unbind C-b
+set -g prefix C-u
+
+# numeracion de windows empieza en 1
+set -g base-index 1
+set-window-option -g pane-base-index 1
+
+# ordena numeracion de ventanas a medida que se cierren
+set -g renumber-windows on
+
+# aumenta el default scrollback lines
+set -g history-limit 10000
+
+# switch to last pane
+bind-key C-a last-pane
+
+#unbind -n Tab
+
+#bind -n C-i select-window -t :+
+
+
+# status bar si no se configura powerline
+#set -g status-position bottom
+#set -g status-justify left
+#set -g status-bg colour8
+#set -g status-fg colour8
+#set -g status-attr dim
+#set -g status-left ''
+#set -g status-right '#[fg=colour7,bg=colour8,bold] %d/%m/%y #[fg=colour7,bg=colour8,bold] %H:%M:%S '
+#set -g status-right-length 50
+#set -g status-left-length 20
+#
+#setw -g window-status-current-fg colour233
+#setw -g window-status-current-bg colour2
+#setw -g window-status-current-attr bold
+#setw -g window-status-current-format ' #I#[fg=colour233]:#[fg=colour233]#W#[fg=colour233]#F '
+#
+#setw -g window-status-fg colour233
+#setw -g window-status-bg colour8
+#setw -g window-status-attr none
+#setw -g window-status-format ' #I#[fg=colour233]:#[fg=colour233]#W#[fg=colour233]#F '
+
+# desabilita el rename automatico de las ventanas
+set-option -g allow-rename off
+

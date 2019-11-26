@@ -1,0 +1,13 @@
+#Script para la configuracion del github
+
+git config --global user.name "Rodrigo Matto"
+git config --global user.email rodrigodavid-@hotmail.com
+git config --global credential.username RodrigoMatto
+git config --global credential.helper "cache --timeout=604800"
+
+
+#git config --global credential.helper cache
+
+
+
+
