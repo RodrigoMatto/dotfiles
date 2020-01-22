@@ -1,0 +1,10 @@
+[...]
+!This is a comment
+!clear lock
+!clear mod2
+!47 ntilde
+keycode  47 = Shift_L + Control_L l 
+!keycode  38 = Caps_Lock
+!keycode  77 = Num_Lock
+!add lock = Caps_Lock
+!add mod2 = Num_Lock
