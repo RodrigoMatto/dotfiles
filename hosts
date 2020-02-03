@@ -1,6 +1,9 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 
+192.168.82.245	imasd	
+192.168.80.13	vcenterserver
 192.168.80.5	rhevmlab.data.com.py
-192.168.82.79	apachetest.rhevmlab.data.com.py apachetest
-192.168.82.78	elkansibletestrhevmlab.data.com.py elk
+192.168.82.79	apachetest.rhevmlab.data.com.py		apache
+192.168.82.78	elkansibletestrhevmlab.data.com.py	elk
+192.168.82.175  ipaserver.lab.data.com.py 		ipaserver
