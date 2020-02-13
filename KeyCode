@@ -1,0 +1,30 @@
+
+
+KeyPress event, serial 40, synthetic NO, window 0x4c00001,
+    root 0x187, subw 0x0, time 19394966, (1223,-33), root:(1223,760),
+    state 0x0, keycode 47 (keysym 0xf1, ntilde), same_screen YES,
+    XLookupString gives 2 bytes: (c3 b1) "ñ"
+    XmbLookupString gives 2 bytes: (c3 b1) "ñ"
+    XFilterEvent returns: False
+
+KeyRelease event, serial 40, synthetic NO, window 0x4c00001,
+    root 0x187, subw 0x0, time 19395097, (1223,-33), root:(1223,760),
+    state 0x0, keycode 47 (keysym 0xf1, ntilde), same_screen YES,
+    XLookupString gives 2 bytes: (c3 b1) "ñ"
+    XFilterEvent returns: False
+
+
+
+
+KeyPress event, serial 40, synthetic NO, window 0x4c00001,
+    root 0x187, subw 0x0, time 19486553, (554,-381), root:(554,412),
+    state 0x0, keycode 47 (keysym 0x3b, semicolon), same_screen YES,
+    XLookupString gives 1 bytes: (3b) ";"
+    XmbLookupString gives 1 bytes: (3b) ";"
+    XFilterEvent returns: False
+
+KeyRelease event, serial 40, synthetic NO, window 0x4c00001,
+    root 0x187, subw 0x0, time 19486674, (554,-381), root:(554,412),
+    state 0x0, keycode 47 (keysym 0x3b, semicolon), same_screen YES,
+    XLookupString gives 1 bytes: (3b) ";"
+    XFilterEvent returns: False

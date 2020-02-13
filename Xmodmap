@@ -1,9 +1,34 @@
-[...]
+![...]
 !This is a comment
 !clear lock
 !clear mod2
 !47 ntilde
-keycode  47 = Shift_L + Control_L l 
+!keycode  47 = Shift_L + Control_L l 
+!remove Lock = Caps_Lock
+!
+!	0x0f1
+!keysym  ntilde = Control_L l
+!keysym  ntilde = Caps_Lock
+!keycode  47 = ntilde 
+
+!keycode  57 = ntilde 
+!	WORKS
+!keysym  n = ntilde 
+!add ntildekey = 93
+
+!keycode 93 = Alt_L n
+
+keysym  Alt_R n  = ntilde
+
+
+
+
+!dd Lock = Caps_Lock
+!
+!	0x0d1
+!keysym  Ntilde = Shift_L  Control_L l 
+!
+!
 !keycode  38 = Caps_Lock
 !keycode  77 = Num_Lock
 !add lock = Caps_Lock
