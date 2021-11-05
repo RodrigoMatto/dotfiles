@@ -1,3 +1,0 @@
-alt + n
-	echo "ntilde"
-	#keysym ntilde
